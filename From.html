@@ -1,0 +1,146 @@
+<body>
+<header id="top" class="top">
+	<link rel="stylesheet" href="From.css">
+    <h1 id="title"> Fitness Club Survey Form </h1>
+    <p  id="description">“Sport is the source of all lives.”</p>
+</header>
+<main>
+    <form class="survey-form" id="survey-form" action="#" >
+        <div>
+            <label id="name" for="name">First name :
+            <input id="name" type="text" name="name" placeholder="ex: Elon" required></label>
+        </div>
+        <div>
+            <label id="name" for="name">Last name :
+            <input id="name" type="text" name="name" placeholder="ex: Musk" required></label>
+        </div>
+        <div>
+            <label id="email" for="email">Email :
+            <input id="email" type="email" name="email" placeholder="ex: google@gmail.com" required></label>
+        </div>
+        <div>
+            <label id="number" for="number">Age :
+            <input id="number" type="number" name="number" placeholder="18" min="1" max="120" value="1"></label>
+        </div>
+        <div>
+            <label id="number" for="number">Height :
+            <input id="number" type="number" name="number" placeholder="cm" min="0" max="300" value="0"></label>
+        </div>
+        <div>
+            <label id="number" for="number">Weight :
+            <input id="number" type="number" name="number"placeholder="lb" min="0" max="500" value="0"></label>
+        </div>
+    </form>
+    <form>
+        <div class="dbox">
+            <label for="dropdown" style="color: #2ecc71;">How many hours do you spend exercising per week ? </label>
+            <select id="dropdown"  name="dropdown">
+                <option value="5hr">more than 5 hr</option>
+                <option value="3hr">more than 3 hr</option>
+                <option value="1hr">more than 1 hr</option>
+                <option value="30min">more than 30 min</option>
+                <option value="none">I have no idea with my exercise program</option>
+            </select>
+        </div>    
+    </form>
+        
+    <form>
+        <div id="radio" class="rbox">
+            <label for="join_us" style="color: #2ecc71;">
+                Would you like to  join our exercise program ?
+            </label>
+            <label  for="Definitely">
+            <input  id="Definitely" 
+                    type="radio"   
+                    name="join_us" 
+                    value="Definitely">Definitely</label>
+            <label  for="Maybe">
+            <input  id="Maybe" 
+                    type="radio" 
+                    name="join_us" 
+                    value="Maybe">Maybe</label> 
+            <label  for="Not_sure">
+            <input  id="Not_sure" 
+                    type="radio" 
+                    name="join_us" 
+                    value="Not_sure">Not sure</label>    
+        </div>
+    </form>
+
+    <form>
+        <div id="checkbox" class="cbox">
+            <label style="color: #2ecc71;" for="">What sports do you like? 
+                <span style="color: #2ecc71;">( Check all that apply )</span>
+            </label>    
+            <label  for="road_running">
+            <input  id="road_running" 
+                    type="checkbox" 
+                    name="road_running" >
+            Road running</label>
+            <label  for="boxing">
+            <input  id="boxing" 
+                    type="checkbox" 
+                    name="boxing" >
+            Boxing</label>
+            <label  for="bike">
+            <input  id="bike" 
+                    type="checkbox" 
+                    name="bike" >
+            Spinning Bike</label>
+            <label  for="waterskiing">
+            <input  id="waterskiing" 
+                    type="checkbox" 
+                    name="waterskiing" >
+            Waterskiing</label>
+            <label  for="swimming">
+            <input  id="swimming" 
+                    type="checkbox" 
+                    name="swimming" >
+            Swimming</label>
+            <label  for="climbing">
+            <input  id="climbing" 
+                    type="checkbox" 
+                    name="climbing" >
+            Climbing</label>
+            <label  for="tabata">
+            <input  id="tabata"    
+                    type="checkbox" 
+                    name="tabata" >
+            TABATA</label>
+            <label  for="pole">
+            <input  id="pole" 
+                    type="checkbox" 
+                    name="pole" >
+            Pole dancing</label>        
+            <label  for="zumba">
+            <input  id="zumba" 
+                    type="checkbox" 
+                    name="zumba" >
+            ZUMBA</label>
+            <label  for="yoga">
+            <input  id="yoga" 
+                    type="checkbox" 
+                    name="yoga" >
+            Yoga</label>
+        </div>
+    </form>
+    <div id="textarea" class="abox">
+        <p class="comments" style="color: #2ecc71;"> Any comments or suggestions? </p>
+        <textarea
+            id="comments"
+            class="textarea"
+            name="comment"
+            placeholder="Enter your comment here...">
+        </textarea>
+    </div>
+    
+
+    <div class="sbox">
+        <label id="Submit" for="submit">
+            <input type="submit" value="Submit" id="Submit" name="Submit">
+        </label>
+    </div>
+    </form>
+</main>   
+</body>
+</html>
