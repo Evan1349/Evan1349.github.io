@@ -1,0 +1,338 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    background: url(https://lh3.googleusercontent.com/niOI-a0kAzEiJPLFeeVjlFj6glutaA5UthVbVJj1bmdSa5uhYSNuVnNuGWih3hzZpZxqmCbS0YVUMIZtiDTHpgamRMEP1saLTcLPM7Ok-pGUnXOje3q5x2HrhmCJVqUq_uty3UOuyQ=w2400);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav{
+    position: fixed;
+    width: 50%;
+    height: auto;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+section{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    flex-wrap: wrap;
+    background-color:#13693be3;
+}
+.iconbtn{
+    height: 80px;
+    width: 80px;
+    text-decoration: none;
+    font-size: 5em;
+    margin: auto;
+    position: relative;
+    border-radius: 50%;
+}
+.iconbtn::before{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.iconbtn::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 50%;
+    z-index: 0;
+}
+.s1 .iconbtn{
+    border: #fff 4px solid;
+    color: #13693be3;
+}
+.s1 .iconbtn::after{
+    background-color: #fff;
+    transition: 0.4s;
+}
+.s1 .iconbtn:hover::after{
+    transform: scale(1.3);
+    opacity: 0;
+}
+.s1 .iconbtn:hover{
+    color: #fff;
+}
+.logo{
+    position: relative;
+    width: 50%;
+    background-color: #e74c3c;
+    border-radius: 15px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.logo-img{
+    flex: 25%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 8em;    
+}
+.logo-name{
+    background:none;
+    color: white;
+    font-size: 6em;
+    flex: 75%;    
+}
+h1{
+    text-align: center;
+    color: #fff;
+    background-color: #2c3e50;
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 300px;
+    font-size: 9em;
+
+}
+.intro{
+    background-color: wheat;
+    color: black;
+    position: relative;
+    top:300px;
+    margin: auto;
+    height: auto;
+    width: 1200px;
+    margin-bottom:300px ;
+    text-align: center;
+    z-index: 1;
+}
+.title{
+    font-size: 4.5em;
+}
+.tp{
+    font-size: 2.5em;
+    line-height: 2em;
+}
+.video{
+    position: relative;
+    left: 450px;
+    margin-top: 50px;
+    margin-bottom: 250px;
+}
+.video_title{
+    text-align: center;
+    color:#fff;
+    background-color:#e67e22;
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    margin-top: 500px;
+    position: relative;
+    font-size: 6em;
+    border-radius: 15px;
+
+}
+.sponsor_title{
+    text-align: center;
+    color:#fff;
+    background-color:#006266;
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    font-size: 6em;
+    border-radius: 15px;
+}
+.pricing-table{
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.col{
+    flex:25%;
+    padding: 10px;
+    max-width: 320px;
+    box-sizing: border-box;
+}
+.table{
+    background: #2c3e50;
+    color:#fff;
+    padding: 40px 20px;
+    font-family: sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #00000070;
+}
+.table h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+}
+.table ul{
+    margin: 0;
+    padding: 0;
+}
+.table ul li{
+    padding: 10px 0;
+    list-style: none;
+}
+.price{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.price span{
+    display: block;
+    font-size: 14px;
+}
+.table a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-weight: 900;
+    transition: 1 linear;
+}
+.Sponsor{
+    color: #2c3e50;
+    transition: 0.2s;
+    z-index: 1;
+}
+.Sponsor::after{
+    content: "Sponsor us";
+    background-color: #fff;
+    font-size: 3em;
+    border-radius: 15px;  
+    z-index: 0;
+    transition: 0.3s;
+}
+.Sponsor:hover::after{
+    content: "Sponsor us";
+    background-color: #e74c3c;
+    border: 4px solid #fff;
+}
+.Sponsor:hover{
+    color: #fff;
+}
+.pop{
+    background-color: #e74c3c;
+    color: white;
+    transform: rotate(45deg);
+    padding: 10px 40px;
+    position: absolute;
+    top: 15px;
+    right: -34px;
+}
+@media screen and (max-width: 980px) {
+    .col{
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .col{
+        flex: 100%;
+    }
+}
+.form_title{
+    text-align: center;
+    color:#fff;
+    background-color:#8e44ad;
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    font-size: 6em;
+    border-radius: 15px;
+}
+.form_p{
+    color: #fff;
+    font-size: 5em;
+}
+.mailbox{
+    width: 1200px;
+    padding: 100px;
+    margin: auto;
+    background-color:#34495e;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 24px;
+}
+.mailbox input[type="email"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #fff;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.mailbox input[type="email"]:focus{
+    width: 500px;
+}
+.mailbox input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 800px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-size: 3em;
+    font-weight: 900px;
+}
+.mailbox input[type="submit"]:hover{
+    color: #fff;
+    background-color: #2ecc71;
+}
+
+footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    background-color: #ddd;
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+    border-radius: 24px;
+    opacity: 0.9;
+    position: relative;
+}
+.copyright{
+    position: absolute;
+    right: 42%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: 900;
+}
+  
+.li {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5em;
+}
+
+  
+
+
+
+
